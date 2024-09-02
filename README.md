@@ -4,29 +4,28 @@
 
 Getting started:
 ```bash
-	sudo apt install python3-venv
-	cd detect-test-pollution-main
-	python3 -m venv ./venv
-	source ./venv/bin/activate
-	pip install -r requirements.txt
+sudo apt install python3-venv
+cd detect-test-pollution-main
+python3 -m venv ./venv
+source ./venv/bin/activate
+pip install -r requirements.txt
 ```
 ## Testing
 ```bash
-	# run tests normally
-	pytest -vv
+# run tests normally
+pytest -vv
 
-	#perform tests with line (node) coverage report
-	pytest -vv --cov=detect_test_pollution
+#perform tests with line (node) coverage report
+pytest -vv --cov
+# perform tests with branch coverage report
+pytest -vv  --cov  --cov-branch  --cov-report html
 
-	# perform tests with branch coverage report
-	pytest -vv  --cov=detect_test_pollution  --cov-branch  --cov-report html
+#run tests with mutmut
+mutmut run --paths-to-mutate= .. /py-knights-fighting/app/main.py
 
-	#run tests with mutmut
-	mutmut run --paths-to-mutate= .. /detect-test-pollution-main/detect_test_pollution.py
+mutmut results
+mutmut show [id]
 
-	mutmut results
-	mutmut show [id]
-
-  # Gerar relatório de mutação
-	mutmut html
+# Gerar relatório de mutação
+mutmut html
 ```

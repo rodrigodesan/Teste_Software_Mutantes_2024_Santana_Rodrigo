@@ -1,46 +1,5 @@
 [
     {
-        "label": "annotations",
-        "importPath": "__future__",
-        "description": "__future__",
-        "isExtraImport": true,
-        "detail": "__future__",
-        "documentation": {}
-    },
-    {
-        "label": "annotations",
-        "importPath": "__future__",
-        "description": "__future__",
-        "isExtraImport": true,
-        "detail": "__future__",
-        "documentation": {}
-    },
-    {
-        "label": "annotations",
-        "importPath": "__future__",
-        "description": "__future__",
-        "isExtraImport": true,
-        "detail": "__future__",
-        "documentation": {}
-    },
-    {
-        "label": "annotations",
-        "importPath": "__future__",
-        "description": "__future__",
-        "isExtraImport": true,
-        "detail": "__future__",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
         "label": "pytest",
         "kind": 6,
         "isExtraImport": true,
@@ -50,427 +9,101 @@
         "documentation": {}
     },
     {
-        "label": "detect_test_pollution",
-        "kind": 6,
+        "label": "battle",
+        "importPath": "app.main",
+        "description": "app.main",
         "isExtraImport": true,
-        "importPath": "detect_test_pollution",
-        "description": "detect_test_pollution",
-        "detail": "detect_test_pollution",
+        "detail": "app.main",
         "documentation": {}
     },
     {
-        "label": "_common_testpath",
-        "importPath": "detect_test_pollution",
-        "description": "detect_test_pollution",
-        "isExtraImport": true,
-        "detail": "detect_test_pollution",
+        "label": "battle",
+        "kind": 2,
+        "importPath": "py-knights-fighting.app.main",
+        "description": "py-knights-fighting.app.main",
+        "peekOfCode": "def battle(knightsConfig):\n    # BATTLE PREPARATIONS:\n    # lancelot\n    lancelot = knightsConfig[\"lancelot\"]\n    # apply armour\n    lancelot[\"protection\"] = 0\n    for a in lancelot[\"armour\"]:\n        lancelot[\"protection\"] += a[\"protection\"]\n    # apply weapon\n    lancelot[\"power\"] += lancelot[\"weapon\"][\"power\"]",
+        "detail": "py-knights-fighting.app.main",
         "documentation": {}
     },
     {
-        "label": "_discover_tests",
-        "importPath": "detect_test_pollution",
-        "description": "detect_test_pollution",
-        "isExtraImport": true,
-        "detail": "detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "_format_cmd",
-        "importPath": "detect_test_pollution",
-        "description": "detect_test_pollution",
-        "isExtraImport": true,
-        "detail": "detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "_parse_testids_file",
-        "importPath": "detect_test_pollution",
-        "description": "detect_test_pollution",
-        "isExtraImport": true,
-        "detail": "detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "_passed_with_testlist",
-        "importPath": "detect_test_pollution",
-        "description": "detect_test_pollution",
-        "isExtraImport": true,
-        "detail": "detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "importPath": "detect_test_pollution",
-        "description": "detect_test_pollution",
-        "isExtraImport": true,
-        "detail": "detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "argparse",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "argparse",
-        "description": "argparse",
-        "detail": "argparse",
-        "documentation": {}
-    },
-    {
-        "label": "contextlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "contextlib",
-        "description": "contextlib",
-        "detail": "contextlib",
-        "documentation": {}
-    },
-    {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "os.path",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os.path",
-        "description": "os.path",
-        "detail": "os.path",
-        "documentation": {}
-    },
-    {
-        "label": "random",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "shlex",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "shlex",
-        "description": "shlex",
-        "detail": "shlex",
-        "documentation": {}
-    },
-    {
-        "label": "subprocess",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "subprocess",
-        "description": "subprocess",
-        "detail": "subprocess",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "tempfile",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "tempfile",
-        "description": "tempfile",
-        "detail": "tempfile",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "pytest_plugins",
+        "label": "KNIGHTS",
         "kind": 5,
-        "importPath": "detect-test-pollution-main.tests.conftest",
-        "description": "detect-test-pollution-main.tests.conftest",
-        "peekOfCode": "pytest_plugins = 'pytester'",
-        "detail": "detect-test-pollution-main.tests.conftest",
+        "importPath": "py-knights-fighting.app.main",
+        "description": "py-knights-fighting.app.main",
+        "peekOfCode": "KNIGHTS = {\n    \"lancelot\": {\n        \"name\": \"Lancelot\",\n        \"power\": 35,\n        \"hp\": 100,\n        \"armour\": [],\n        \"weapon\": {\n            \"name\": \"Metal Sword\",\n            \"power\": 50,\n        },",
+        "detail": "py-knights-fighting.app.main",
         "documentation": {}
     },
     {
-        "label": "test_pytest_plugin_does_not_crash_when_not_enabled",
+        "label": "base_knights_config",
         "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_pytest_plugin_does_not_crash_when_not_enabled(pytester):\n    res = pytester.inline_runsource(\n        'def test(): pass',\n        '-p', detect_test_pollution.__name__,\n    )\n    assert res.ret == 0\ndef test_pytest_plugin_outputs_testids(tmp_path, pytester):\n    src = '''\\\nimport pytest\n@pytest.mark.parametrize('s', (1, 2, 3))",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
+        "importPath": "py-knights-fighting.tests.test_main",
+        "description": "py-knights-fighting.tests.test_main",
+        "peekOfCode": "def base_knights_config():\n    return {\n        \"lancelot\": {\n            \"name\": \"Lancelot\",\n            \"power\": 35,\n            \"hp\": 100,\n            \"armour\": [],\n            \"weapon\": {\n                \"name\": \"Metal Sword\",\n                \"power\": 50,",
+        "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     },
     {
-        "label": "test_pytest_plugin_outputs_testids",
+        "label": "test_base_knights",
         "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_pytest_plugin_outputs_testids(tmp_path, pytester):\n    src = '''\\\nimport pytest\n@pytest.mark.parametrize('s', (1, 2, 3))\ndef test(s): pass\n'''\n    out = tmp_path.joinpath('testids')\n    res = pytester.inline_runsource(\n        src,\n        '--collect-only', '-q',",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
+        "importPath": "py-knights-fighting.tests.test_main",
+        "description": "py-knights-fighting.tests.test_main",
+        "peekOfCode": "def test_base_knights(base_knights_config):\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 0,\n        \"Arthur\": 30,\n        \"Mordred\": 35,\n        \"Red Knight\": 5,\n    }\ndef test_lancelot_overpowered(base_knights_config):\n    base_knights_config[\"lancelot\"][\"hp\"] += 50\n    base_knights_config[\"lancelot\"][\"power\"] += 50",
+        "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     },
     {
-        "label": "test",
+        "label": "test_lancelot_overpowered",
         "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test(s): pass\n'''\n    out = tmp_path.joinpath('testids')\n    res = pytester.inline_runsource(\n        src,\n        '--collect-only', '-q',\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-testids-output-file={out}',\n    )",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
+        "importPath": "py-knights-fighting.tests.test_main",
+        "description": "py-knights-fighting.tests.test_main",
+        "peekOfCode": "def test_lancelot_overpowered(base_knights_config):\n    base_knights_config[\"lancelot\"][\"hp\"] += 50\n    base_knights_config[\"lancelot\"][\"power\"] += 50\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 45,\n        \"Arthur\": 30,\n        \"Mordred\": 0,\n        \"Red Knight\": 5,\n    }\ndef test_red_knight_overpowered(base_knights_config):",
+        "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     },
     {
-        "label": "test_pytest_plugin_inputs_testids",
+        "label": "test_red_knight_overpowered",
         "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_pytest_plugin_inputs_testids(tmp_path, pytester):\n    src = '''\\\nimport pytest\n@pytest.mark.parametrize('s', (1, 2, 3))\ndef test(s): pass\n'''\n    inp = tmp_path.joinpath('testids')\n    inp.write_text('test_pytest_plugin_inputs_testids.py::test[1]')\n    res = pytester.inline_runsource(\n        src,",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
+        "importPath": "py-knights-fighting.tests.test_main",
+        "description": "py-knights-fighting.tests.test_main",
+        "peekOfCode": "def test_red_knight_overpowered(base_knights_config):\n    base_knights_config[\"red_knight\"][\"hp\"] += 50\n    base_knights_config[\"red_knight\"][\"power\"] += 50\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 0,\n        \"Arthur\": 0,\n        \"Mordred\": 35,\n        \"Red Knight\": 55,\n    }\ndef test_lancelot_has_armour(base_knights_config):",
+        "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     },
     {
-        "label": "test",
+        "label": "test_lancelot_has_armour",
         "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test(s): pass\n'''\n    inp = tmp_path.joinpath('testids')\n    inp.write_text('test_pytest_plugin_inputs_testids.py::test[1]')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-testids-input-file={inp}',\n    )",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
+        "importPath": "py-knights-fighting.tests.test_main",
+        "description": "py-knights-fighting.tests.test_main",
+        "peekOfCode": "def test_lancelot_has_armour(base_knights_config):\n    base_knights_config[\"lancelot\"][\"armour\"].append({\n        \"part\": \"helmet\",\n        \"protection\": 25,\n    })\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 20,\n        \"Arthur\": 30,\n        \"Mordred\": 35,\n        \"Red Knight\": 5,",
+        "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     },
     {
-        "label": "test_pytest_plugin_results_output",
+        "label": "test_mordred_sword_is_not_poisoned",
         "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_pytest_plugin_results_output(tmp_path, pytester):\n    src = '''\ndef test1(): assert False\ndef test2(): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
+        "importPath": "py-knights-fighting.tests.test_main",
+        "description": "py-knights-fighting.tests.test_main",
+        "peekOfCode": "def test_mordred_sword_is_not_poisoned(base_knights_config):\n    base_knights_config[\"mordred\"][\"weapon\"][\"name\"] = \"Common Sword\"\n    base_knights_config[\"mordred\"][\"weapon\"][\"power\"] -= 15\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 10,\n        \"Arthur\": 30,\n        \"Mordred\": 35,\n        \"Red Knight\": 5,\n    }\ndef test_arthur_armour_weak(base_knights_config):",
+        "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     },
     {
-        "label": "test1",
+        "label": "test_arthur_armour_weak",
         "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test1(): assert False\ndef test2(): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-results-output-file={out}',\n    )",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
+        "importPath": "py-knights-fighting.tests.test_main",
+        "description": "py-knights-fighting.tests.test_main",
+        "peekOfCode": "def test_arthur_armour_weak(base_knights_config):\n    base_knights_config[\"arthur\"][\"armour\"][0][\"protection\"] -= 10\n    base_knights_config[\"arthur\"][\"armour\"][1][\"protection\"] -= 10\n    base_knights_config[\"arthur\"][\"armour\"][0][\"protection\"] -= 10\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 0,\n        \"Arthur\": 0,\n        \"Mordred\": 35,\n        \"Red Knight\": 5,\n    }",
+        "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     },
     {
-        "label": "test2",
+        "label": "test_arthur_and_lancelot_have_potion",
         "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test2(): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-results-output-file={out}',\n    )\n    assert res.ret == 1",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test_pytest_plugin_results_output_error",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_pytest_plugin_results_output_error(tmp_path, pytester):\n    src = '''\\\nimport pytest\ndef test1(): pass\n@pytest.fixture\ndef e(): assert False\ndef test2(e): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test1",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test1(): pass\n@pytest.fixture\ndef e(): assert False\ndef test2(e): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "e",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def e(): assert False\ndef test2(e): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-results-output-file={out}',\n    )",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test2",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test2(e): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-results-output-file={out}',\n    )\n    assert res.ret == 1",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test_parse_testids_file",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_parse_testids_file(tmp_path):\n    f = tmp_path.joinpath('t.json')\n    f.write_text('test.py::test1\\ntest.py::test2')\n    assert _parse_testids_file(f) == ['test.py::test1', 'test.py::test2']\ndef test_parse_testids_file_blank_line(tmp_path):\n    f = tmp_path.joinpath('t.json')\n    f.write_text('test.py::test1\\n\\ntest.py::test2')\n    assert _parse_testids_file(f) == ['test.py::test1', 'test.py::test2']\ndef test_discover_tests(tmp_path):\n    f = tmp_path.joinpath('t.py')",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test_parse_testids_file_blank_line",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_parse_testids_file_blank_line(tmp_path):\n    f = tmp_path.joinpath('t.json')\n    f.write_text('test.py::test1\\n\\ntest.py::test2')\n    assert _parse_testids_file(f) == ['test.py::test1', 'test.py::test2']\ndef test_discover_tests(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test_one(): pass\\ndef test_two(): pass\\n')\n    assert _discover_tests(f) == ['t.py::test_one', 't.py::test_two']\n@pytest.mark.parametrize(\n    ('inputs', 'expected'),",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test_discover_tests",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_discover_tests(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test_one(): pass\\ndef test_two(): pass\\n')\n    assert _discover_tests(f) == ['t.py::test_one', 't.py::test_two']\n@pytest.mark.parametrize(\n    ('inputs', 'expected'),\n    (\n        ([], '.'),\n        (['a', 'a/b'], 'a'),\n        (['a', 'b'], '.'),",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test_common_testpath",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_common_testpath(inputs, expected):\n    assert _common_testpath(inputs) == expected\ndef test_passed_with_testlist_failing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): assert False\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is False\ndef test_passed_with_testlist_passing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): pass\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is True",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test_passed_with_testlist_failing",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_passed_with_testlist_failing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): assert False\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is False\ndef test_passed_with_testlist_passing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): pass\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is True\ndef test_format_cmd_with_tests():\n    ret = _format_cmd('t.py::test1', 'this t.py', None)",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test_passed_with_testlist_passing",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_passed_with_testlist_passing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): pass\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is True\ndef test_format_cmd_with_tests():\n    ret = _format_cmd('t.py::test1', 'this t.py', None)\n    assert ret == (\n        'detect-test-pollution --failing-test t.py::test1 '\n        \"--tests 'this t.py'\"\n    )",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test_format_cmd_with_tests",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_format_cmd_with_tests():\n    ret = _format_cmd('t.py::test1', 'this t.py', None)\n    assert ret == (\n        'detect-test-pollution --failing-test t.py::test1 '\n        \"--tests 'this t.py'\"\n    )\ndef test_format_cmd_with_testids_filename():\n    ret = _format_cmd('t.py::test1', None, 't.txt')\n    assert ret == (\n        'detect-test-pollution --failing-test t.py::test1 '",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "test_format_cmd_with_testids_filename",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "description": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "peekOfCode": "def test_format_cmd_with_testids_filename():\n    ret = _format_cmd('t.py::test1', None, 't.txt')\n    assert ret == (\n        'detect-test-pollution --failing-test t.py::test1 '\n        '--testids-filename t.txt'\n    )\n# def test_integration_missing_failing_test(tmpdir, capsys):\n#     f = tmpdir.join('t.py')\n#     f.write('def test1(): pass')\n#     with tmpdir.as_cwd():",
-        "detail": "detect-test-pollution-main.tests.detect_test_pollution_test",
-        "documentation": {}
-    },
-    {
-        "label": "CollectResults",
-        "kind": 6,
-        "importPath": "detect-test-pollution-main.detect_test_pollution",
-        "description": "detect-test-pollution-main.detect_test_pollution",
-        "peekOfCode": "class CollectResults:\n    def __init__(self, filename: str) -> None:\n        self.filename = filename\n        self.results: dict[str, bool] = {}\n    def pytest_runtest_logreport(self, report: pytest.TestReport) -> None:\n        if report.when == 'call':\n            self.results[report.nodeid] = report.outcome == 'passed'\n        elif report.outcome == 'failed':\n            self.results[report.nodeid] = False\n    def pytest_terminal_summary(self, config: pytest.Config) -> None:",
-        "detail": "detect-test-pollution-main.detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "pytest_addoption",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.detect_test_pollution",
-        "description": "detect-test-pollution-main.detect_test_pollution",
-        "peekOfCode": "def pytest_addoption(parser: pytest.Parser) -> None:\n    parser.addoption(TESTIDS_INPUT_OPTION)\n    parser.addoption(TESTIDS_OUTPUT_OPTION)\n    parser.addoption(RESULTS_OUTPUT_OPTION)\ndef pytest_collection_modifyitems(\n        config: pytest.Config,\n        items: list[pytest.Item],\n) -> None:\n    read_option = config.getoption(TESTIDS_INPUT_OPTION)\n    write_option = config.getoption(TESTIDS_OUTPUT_OPTION)",
-        "detail": "detect-test-pollution-main.detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "pytest_collection_modifyitems",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.detect_test_pollution",
-        "description": "detect-test-pollution-main.detect_test_pollution",
-        "peekOfCode": "def pytest_collection_modifyitems(\n        config: pytest.Config,\n        items: list[pytest.Item],\n) -> None:\n    read_option = config.getoption(TESTIDS_INPUT_OPTION)\n    write_option = config.getoption(TESTIDS_OUTPUT_OPTION)\n    if read_option is not None:\n        by_id = {item.nodeid: item for item in items}\n        testids = _parse_testids_file(read_option)\n        items[:] = [by_id[testid] for testid in testids]",
-        "detail": "detect-test-pollution-main.detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "pytest_configure",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.detect_test_pollution",
-        "description": "detect-test-pollution-main.detect_test_pollution",
-        "peekOfCode": "def pytest_configure(config: pytest.Config) -> None:\n    results_filename = config.getoption(RESULTS_OUTPUT_OPTION)\n    if results_filename is not None:\n        config.pluginmanager.register(CollectResults(results_filename))\ndef _run_pytest(*args: str) -> None:\n    # XXX: this is potentially difficult to debug? maybe --verbose?\n    subprocess.check_call(\n        (sys.executable, '-mpytest', *PYTEST_OPTIONS, *args),\n        stdout=subprocess.DEVNULL,\n    )",
-        "detail": "detect-test-pollution-main.detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "detect-test-pollution-main.detect_test_pollution",
-        "description": "detect-test-pollution-main.detect_test_pollution",
-        "peekOfCode": "def main(argv: Sequence[str] | None = None) -> int:\n    parser = argparse.ArgumentParser()\n    mutex1 = parser.add_mutually_exclusive_group(required=True)\n    mutex1.add_argument(\n        '--fuzz',\n        action='store_true',\n        help='repeatedly shuffle the test suite searching for failures',\n    )\n    mutex1.add_argument(\n        '--failing-test',",
-        "detail": "detect-test-pollution-main.detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "TESTIDS_INPUT_OPTION",
-        "kind": 5,
-        "importPath": "detect-test-pollution-main.detect_test_pollution",
-        "description": "detect-test-pollution-main.detect_test_pollution",
-        "peekOfCode": "TESTIDS_INPUT_OPTION = '--dtp-testids-input-file'\nTESTIDS_OUTPUT_OPTION = '--dtp-testids-output-file'\nRESULTS_OUTPUT_OPTION = '--dtp-results-output-file'\nPYTEST_OPTIONS = (\n    '-p', __name__,\n    # disable known test-randomization plugins\n    '-p', 'no:randomly',\n    # we don't read the output at all\n    '--quiet', '--quiet',\n)",
-        "detail": "detect-test-pollution-main.detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "TESTIDS_OUTPUT_OPTION",
-        "kind": 5,
-        "importPath": "detect-test-pollution-main.detect_test_pollution",
-        "description": "detect-test-pollution-main.detect_test_pollution",
-        "peekOfCode": "TESTIDS_OUTPUT_OPTION = '--dtp-testids-output-file'\nRESULTS_OUTPUT_OPTION = '--dtp-results-output-file'\nPYTEST_OPTIONS = (\n    '-p', __name__,\n    # disable known test-randomization plugins\n    '-p', 'no:randomly',\n    # we don't read the output at all\n    '--quiet', '--quiet',\n)\ndef pytest_addoption(parser: pytest.Parser) -> None:",
-        "detail": "detect-test-pollution-main.detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "RESULTS_OUTPUT_OPTION",
-        "kind": 5,
-        "importPath": "detect-test-pollution-main.detect_test_pollution",
-        "description": "detect-test-pollution-main.detect_test_pollution",
-        "peekOfCode": "RESULTS_OUTPUT_OPTION = '--dtp-results-output-file'\nPYTEST_OPTIONS = (\n    '-p', __name__,\n    # disable known test-randomization plugins\n    '-p', 'no:randomly',\n    # we don't read the output at all\n    '--quiet', '--quiet',\n)\ndef pytest_addoption(parser: pytest.Parser) -> None:\n    parser.addoption(TESTIDS_INPUT_OPTION)",
-        "detail": "detect-test-pollution-main.detect_test_pollution",
-        "documentation": {}
-    },
-    {
-        "label": "PYTEST_OPTIONS",
-        "kind": 5,
-        "importPath": "detect-test-pollution-main.detect_test_pollution",
-        "description": "detect-test-pollution-main.detect_test_pollution",
-        "peekOfCode": "PYTEST_OPTIONS = (\n    '-p', __name__,\n    # disable known test-randomization plugins\n    '-p', 'no:randomly',\n    # we don't read the output at all\n    '--quiet', '--quiet',\n)\ndef pytest_addoption(parser: pytest.Parser) -> None:\n    parser.addoption(TESTIDS_INPUT_OPTION)\n    parser.addoption(TESTIDS_OUTPUT_OPTION)",
-        "detail": "detect-test-pollution-main.detect_test_pollution",
+        "importPath": "py-knights-fighting.tests.test_main",
+        "description": "py-knights-fighting.tests.test_main",
+        "peekOfCode": "def test_arthur_and_lancelot_have_potion(base_knights_config):\n    base_knights_config[\"arthur\"][\"potion\"] = {\n        \"name\": \"Dragon's heart\",\n        \"effect\": {\n            \"protection\": +20,\n            \"power\": +10,\n            \"hp\": +10,\n        }\n    }\n    base_knights_config[\"lancelot\"][\"potion\"] = {",
+        "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     }
 ]
