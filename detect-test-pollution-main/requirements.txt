@@ -1,0 +1,5 @@
+covdefaults>=2.1
+pytest
+pytest
+pytest-cov
+mutmut
