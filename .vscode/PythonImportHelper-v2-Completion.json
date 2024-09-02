@@ -1,0 +1,665 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "detect_test_pollution",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "_common_testpath",
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "isExtraImport": true,
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "_discover_tests",
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "isExtraImport": true,
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "_format_cmd",
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "isExtraImport": true,
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "_parse_testids_file",
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "isExtraImport": true,
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "_passed_with_testlist",
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "isExtraImport": true,
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "isExtraImport": true,
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "contextlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "shlex",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shlex",
+        "description": "shlex",
+        "detail": "shlex",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_plugins",
+        "kind": 5,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "pytest_plugins = 'pytester'",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_pytest_plugin_does_not_crash_when_not_enabled",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_pytest_plugin_does_not_crash_when_not_enabled(pytester):\n    res = pytester.inline_runsource(\n        'def test(): pass',\n        '-p', detect_test_pollution.__name__,\n    )\n    assert res.ret == 0\ndef test_pytest_plugin_outputs_testids(tmp_path, pytester):\n    src = '''\\\nimport pytest\n@pytest.mark.parametrize('s', (1, 2, 3))",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_pytest_plugin_outputs_testids",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_pytest_plugin_outputs_testids(tmp_path, pytester):\n    src = '''\\\nimport pytest\n@pytest.mark.parametrize('s', (1, 2, 3))\ndef test(s): pass\n'''\n    out = tmp_path.joinpath('testids')\n    res = pytester.inline_runsource(\n        src,\n        '--collect-only', '-q',",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test(s): pass\n'''\n    out = tmp_path.joinpath('testids')\n    res = pytester.inline_runsource(\n        src,\n        '--collect-only', '-q',\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-testids-output-file={out}',\n    )",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_pytest_plugin_inputs_testids",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_pytest_plugin_inputs_testids(tmp_path, pytester):\n    src = '''\\\nimport pytest\n@pytest.mark.parametrize('s', (1, 2, 3))\ndef test(s): pass\n'''\n    inp = tmp_path.joinpath('testids')\n    inp.write_text('test_pytest_plugin_inputs_testids.py::test[1]')\n    res = pytester.inline_runsource(\n        src,",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test(s): pass\n'''\n    inp = tmp_path.joinpath('testids')\n    inp.write_text('test_pytest_plugin_inputs_testids.py::test[1]')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-testids-input-file={inp}',\n    )",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_pytest_plugin_results_output",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_pytest_plugin_results_output(tmp_path, pytester):\n    src = '''\ndef test1(): assert False\ndef test2(): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test1",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test1(): assert False\ndef test2(): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-results-output-file={out}',\n    )",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test2",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test2(): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-results-output-file={out}',\n    )\n    assert res.ret == 1",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_pytest_plugin_results_output_error",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_pytest_plugin_results_output_error(tmp_path, pytester):\n    src = '''\\\nimport pytest\ndef test1(): pass\n@pytest.fixture\ndef e(): assert False\ndef test2(e): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test1",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test1(): pass\n@pytest.fixture\ndef e(): assert False\ndef test2(e): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def e(): assert False\ndef test2(e): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-results-output-file={out}',\n    )",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test2",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test2(e): pass\n'''\n    out = tmp_path.joinpath('out.json')\n    res = pytester.inline_runsource(\n        src,\n        '-p', detect_test_pollution.__name__,\n        # use `=` to avoid pytest's basedir detection\n        f'--dtp-results-output-file={out}',\n    )\n    assert res.ret == 1",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_parse_testids_file",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_parse_testids_file(tmp_path):\n    f = tmp_path.joinpath('t.json')\n    f.write_text('test.py::test1\\ntest.py::test2')\n    assert _parse_testids_file(f) == ['test.py::test1', 'test.py::test2']\ndef test_parse_testids_file_blank_line(tmp_path):\n    f = tmp_path.joinpath('t.json')\n    f.write_text('test.py::test1\\n\\ntest.py::test2')\n    assert _parse_testids_file(f) == ['test.py::test1', 'test.py::test2']\ndef test_discover_tests(tmp_path):\n    f = tmp_path.joinpath('t.py')",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_parse_testids_file_blank_line",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_parse_testids_file_blank_line(tmp_path):\n    f = tmp_path.joinpath('t.json')\n    f.write_text('test.py::test1\\n\\ntest.py::test2')\n    assert _parse_testids_file(f) == ['test.py::test1', 'test.py::test2']\ndef test_discover_tests(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test_one(): pass\\ndef test_two(): pass\\n')\n    assert _discover_tests(f) == ['t.py::test_one', 't.py::test_two']\n@pytest.mark.parametrize(\n    ('inputs', 'expected'),",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_discover_tests",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_discover_tests(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test_one(): pass\\ndef test_two(): pass\\n')\n    assert _discover_tests(f) == ['t.py::test_one', 't.py::test_two']\n@pytest.mark.parametrize(\n    ('inputs', 'expected'),\n    (\n        ([], '.'),\n        (['a', 'a/b'], 'a'),\n        (['a', 'b'], '.'),",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_common_testpath",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_common_testpath(inputs, expected):\n    assert _common_testpath(inputs) == expected\ndef test_passed_with_testlist_failing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): assert False\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is False\ndef test_passed_with_testlist_passing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): pass\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is True",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_passed_with_testlist_failing",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_passed_with_testlist_failing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): assert False\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is False\ndef test_passed_with_testlist_passing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): pass\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is True\ndef test_format_cmd_with_tests():\n    ret = _format_cmd('t.py::test1', 'this t.py', None)",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_passed_with_testlist_passing",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_passed_with_testlist_passing(tmp_path):\n    f = tmp_path.joinpath('t.py')\n    f.write_text('def test1(): pass\\ndef test2(): pass\\n')\n    assert _passed_with_testlist(f, 't.py::test2', ['t.py::test1']) is True\ndef test_format_cmd_with_tests():\n    ret = _format_cmd('t.py::test1', 'this t.py', None)\n    assert ret == (\n        'detect-test-pollution --failing-test t.py::test1 '\n        \"--tests 'this t.py'\"\n    )",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_format_cmd_with_tests",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_format_cmd_with_tests():\n    ret = _format_cmd('t.py::test1', 'this t.py', None)\n    assert ret == (\n        'detect-test-pollution --failing-test t.py::test1 '\n        \"--tests 'this t.py'\"\n    )\ndef test_format_cmd_with_testids_filename():\n    ret = _format_cmd('t.py::test1', None, 't.txt')\n    assert ret == (\n        'detect-test-pollution --failing-test t.py::test1 '",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_format_cmd_with_testids_filename",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_format_cmd_with_testids_filename():\n    ret = _format_cmd('t.py::test1', None, 't.txt')\n    assert ret == (\n        'detect-test-pollution --failing-test t.py::test1 '\n        '--testids-filename t.txt'\n    )\ndef test_integration_missing_failing_test(tmpdir, capsys):\n    f = tmpdir.join('t.py')\n    f.write('def test1(): pass')\n    with tmpdir.as_cwd():",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_integration_missing_failing_test",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_integration_missing_failing_test(tmpdir, capsys):\n    f = tmpdir.join('t.py')\n    f.write('def test1(): pass')\n    with tmpdir.as_cwd():\n        ret = main(('--tests', str(f), '--failing-test', 't.py::test2'))\n    assert ret == 1\n    out, _ = capsys.readouterr()\n    assert out == '''\\\ndiscovering all tests...\n-> discovered 1 tests!",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_integration_test_does_not_pass_by_itself",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_integration_test_does_not_pass_by_itself(tmpdir, capsys):\n    f = tmpdir.join('t.py')\n    f.write('def test1(): pass\\ndef test2(): assert False')\n    with tmpdir.as_cwd():\n        ret = main(('--tests', str(f), '--failing-test', 't.py::test2'))\n    assert ret == 1\n    out, _ = capsys.readouterr()\n    assert out == '''\\\ndiscovering all tests...\n-> discovered 2 tests!",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_integration_does_not_fail_with_all_tests",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_integration_does_not_fail_with_all_tests(tmpdir, capsys):\n    f = tmpdir.join('t.py')\n    f.write('def test1(): pass\\ndef test2(): pass')\n    with tmpdir.as_cwd():\n        ret = main(('--tests', str(f), '--failing-test', 't.py::test2'))\n    assert ret == 1\n    out, _ = capsys.readouterr()\n    assert out == '''\\\ndiscovering all tests...\n-> discovered 2 tests!",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_integration_finds_pollution",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_integration_finds_pollution(tmpdir, capsys):\n    src = '''\\\nk = 1\ndef test_other():\n    pass\ndef test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_other",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_other():\n    pass\ndef test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2\n    assert k == 2",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_other2",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2\n    assert k == 2\n'''\n    f = tmpdir.join('t.py')",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_k",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2\n    assert k == 2\n'''\n    f = tmpdir.join('t.py')\n    f.write(src)\n    with tmpdir.as_cwd():",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_k2",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_k2():\n    global k\n    k = 2\n    assert k == 2\n'''\n    f = tmpdir.join('t.py')\n    f.write(src)\n    with tmpdir.as_cwd():\n        ret = main(('--tests', str(f), '--failing-test', 't.py::test_k'))\n    assert ret == 0",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_integration_pre_supplied_test_list",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_integration_pre_supplied_test_list(tmpdir, capsys):\n    src = '''\\\nk = 1\ndef test_other():\n    pass\ndef test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_other",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_other():\n    pass\ndef test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2\n    assert k == 2",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_other2",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2\n    assert k == 2\n'''\n    testlist = tmpdir.join('testlist')",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_k",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2\n    assert k == 2\n'''\n    testlist = tmpdir.join('testlist')\n    testlist.write(\n        't.py::test_k\\n'",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_k2",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_k2():\n    global k\n    k = 2\n    assert k == 2\n'''\n    testlist = tmpdir.join('testlist')\n    testlist.write(\n        't.py::test_k\\n'\n        't.py::test_k2\\n'\n        't.py::test_other\\n',",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_integration_fuzz",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_integration_fuzz(tmpdir, capsys):\n    src = '''\\\nk = 1\ndef test_other():\n    pass\ndef test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_other",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_other():\n    pass\ndef test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2\n    assert k == 2",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_other2",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2\n    assert k == 2\n'''\n    f = tmpdir.join('t.py')",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_k",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2\n    assert k == 2\n'''\n    f = tmpdir.join('t.py')\n    f.write(src)\n    with tmpdir.as_cwd():",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_k2",
+        "kind": 2,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "def test_k2():\n    global k\n    k = 2\n    assert k == 2\n'''\n    f = tmpdir.join('t.py')\n    f.write(src)\n    with tmpdir.as_cwd():\n        ret = main(('--fuzz', '--tests', str(f)))\n    assert ret == 1",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "k = 1\ndef test_other():\n    pass\ndef test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "k = 1\ndef test_other():\n    pass\ndef test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "tests.detect_test_pollution_test",
+        "description": "tests.detect_test_pollution_test",
+        "peekOfCode": "k = 1\ndef test_other():\n    pass\ndef test_other2():\n    pass\ndef test_k():\n    assert k == 1\ndef test_k2():\n    global k\n    k = 2",
+        "detail": "tests.detect_test_pollution_test",
+        "documentation": {}
+    },
+    {
+        "label": "CollectResults",
+        "kind": 6,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "peekOfCode": "class CollectResults:\n    def __init__(self, filename: str) -> None:\n        self.filename = filename\n        self.results: dict[str, bool] = {}\n    def pytest_runtest_logreport(self, report: pytest.TestReport) -> None:\n        if report.when == 'call':\n            self.results[report.nodeid] = report.outcome == 'passed'\n        elif report.outcome == 'failed':\n            self.results[report.nodeid] = False\n    def pytest_terminal_summary(self, config: pytest.Config) -> None:",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_addoption",
+        "kind": 2,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "peekOfCode": "def pytest_addoption(parser: pytest.Parser) -> None:\n    parser.addoption(TESTIDS_INPUT_OPTION)\n    parser.addoption(TESTIDS_OUTPUT_OPTION)\n    parser.addoption(RESULTS_OUTPUT_OPTION)\ndef pytest_collection_modifyitems(\n        config: pytest.Config,\n        items: list[pytest.Item],\n) -> None:\n    read_option = config.getoption(TESTIDS_INPUT_OPTION)\n    write_option = config.getoption(TESTIDS_OUTPUT_OPTION)",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_collection_modifyitems",
+        "kind": 2,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "peekOfCode": "def pytest_collection_modifyitems(\n        config: pytest.Config,\n        items: list[pytest.Item],\n) -> None:\n    read_option = config.getoption(TESTIDS_INPUT_OPTION)\n    write_option = config.getoption(TESTIDS_OUTPUT_OPTION)\n    if read_option is not None:\n        by_id = {item.nodeid: item for item in items}\n        testids = _parse_testids_file(read_option)\n        items[:] = [by_id[testid] for testid in testids]",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_configure",
+        "kind": 2,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "peekOfCode": "def pytest_configure(config: pytest.Config) -> None:\n    results_filename = config.getoption(RESULTS_OUTPUT_OPTION)\n    if results_filename is not None:\n        config.pluginmanager.register(CollectResults(results_filename))\ndef _run_pytest(*args: str) -> None:\n    # XXX: this is potentially difficult to debug? maybe --verbose?\n    subprocess.check_call(\n        (sys.executable, '-mpytest', *PYTEST_OPTIONS, *args),\n        stdout=subprocess.DEVNULL,\n    )",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "peekOfCode": "def main(argv: Sequence[str] | None = None) -> int:\n    parser = argparse.ArgumentParser()\n    mutex1 = parser.add_mutually_exclusive_group(required=True)\n    mutex1.add_argument(\n        '--fuzz',\n        action='store_true',\n        help='repeatedly shuffle the test suite searching for failures',\n    )\n    mutex1.add_argument(\n        '--failing-test',",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "TESTIDS_INPUT_OPTION",
+        "kind": 5,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "peekOfCode": "TESTIDS_INPUT_OPTION = '--dtp-testids-input-file'\nTESTIDS_OUTPUT_OPTION = '--dtp-testids-output-file'\nRESULTS_OUTPUT_OPTION = '--dtp-results-output-file'\nPYTEST_OPTIONS = (\n    '-p', __name__,\n    # disable known test-randomization plugins\n    '-p', 'no:randomly',\n    # we don't read the output at all\n    '--quiet', '--quiet',\n)",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "TESTIDS_OUTPUT_OPTION",
+        "kind": 5,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "peekOfCode": "TESTIDS_OUTPUT_OPTION = '--dtp-testids-output-file'\nRESULTS_OUTPUT_OPTION = '--dtp-results-output-file'\nPYTEST_OPTIONS = (\n    '-p', __name__,\n    # disable known test-randomization plugins\n    '-p', 'no:randomly',\n    # we don't read the output at all\n    '--quiet', '--quiet',\n)\ndef pytest_addoption(parser: pytest.Parser) -> None:",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "RESULTS_OUTPUT_OPTION",
+        "kind": 5,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "peekOfCode": "RESULTS_OUTPUT_OPTION = '--dtp-results-output-file'\nPYTEST_OPTIONS = (\n    '-p', __name__,\n    # disable known test-randomization plugins\n    '-p', 'no:randomly',\n    # we don't read the output at all\n    '--quiet', '--quiet',\n)\ndef pytest_addoption(parser: pytest.Parser) -> None:\n    parser.addoption(TESTIDS_INPUT_OPTION)",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    },
+    {
+        "label": "PYTEST_OPTIONS",
+        "kind": 5,
+        "importPath": "detect_test_pollution",
+        "description": "detect_test_pollution",
+        "peekOfCode": "PYTEST_OPTIONS = (\n    '-p', __name__,\n    # disable known test-randomization plugins\n    '-p', 'no:randomly',\n    # we don't read the output at all\n    '--quiet', '--quiet',\n)\ndef pytest_addoption(parser: pytest.Parser) -> None:\n    parser.addoption(TESTIDS_INPUT_OPTION)\n    parser.addoption(TESTIDS_OUTPUT_OPTION)",
+        "detail": "detect_test_pollution",
+        "documentation": {}
+    }
+]
