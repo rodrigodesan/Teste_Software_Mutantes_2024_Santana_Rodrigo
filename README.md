@@ -13,16 +13,16 @@ Getting started:
 ## Testing
 ```bash
 	# run tests normally
-	pytest -vv  test_cal.py
+	pytest -vv
 
 	#perform tests with line (node) coverage report
-	pytest -vv  test_cal.py  --cov=cal
+	pytest -vv --cov=detect_test_pollution
 
 	# perform tests with branch coverage report
-	pytest -vv  test_cal.py  --cov=cal  --cov-branch  --cov-report html
+	pytest -vv  --cov=detect_test_pollution  --cov-branch  --cov-report html
 
 	#run tests with mutmut
-	mutmut run --paths-to-mutate= .. /detect-test-pollution-main/cal.py
+	mutmut run --paths-to-mutate= .. /detect-test-pollution-main/detect_test_pollution.py
 
 	mutmut results
 	mutmut show [id]
