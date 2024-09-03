@@ -1,6 +1,6 @@
 ## Passo a passo do vídeo
 
-Getting started:
+### Getting started:
 ```bash
 sudo apt install python3-venv
 cd detect-test-pollution-main
@@ -8,7 +8,7 @@ python3 -m venv ./venv
 source ./venv/bin/activate
 pip install -r requirements.txt
 ```
-## Testing
+### Testing
 ```bash
 # run tests normally
 pytest -vv
