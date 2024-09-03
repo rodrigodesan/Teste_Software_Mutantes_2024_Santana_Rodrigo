@@ -28,48 +28,6 @@ mutmut show [id]
 mutmut html
 ```
 
-# Tutorial
-
-## Passos Executados no Vídeo
-
-1. **Acessar o Repositório**
-   - Acesse [https://github.com/stevaoaa/cal_python](https://github.com/stevaoaa/cal_python)
-   - Baixe o repositório e acesse-o localmente através do Visual Studio Code
-
-2. **Configuração do Ambiente**
-   - Siga o passo a passo de configuração descrito no README do repositório:
-     ```bash
-     sudo apt install python3-venv
-     cd cal_python
-     python3 -m venv ./venv
-     source ./venv/bin/activate
-     pip install -r requirements.txt
-     ```
-
-3. **Executar Testes e Gerar Relatórios de Mutação**
-   - Executar testes com relatório de cobertura de linhas:
-     ```bash
-     pytest -vv test_cal.py
-     ```
-   - Executar testes com relatório de cobertura de linhas:
-     ```bash
-     pytest -vv test_cal.py --cov=cal
-     ```
-   - Executar testes com relatório de cobertura de ramos:
-     ```bash
-     pytest -vv test_cal.py --cov=cal --cov-branch --cov-report html
-     ```
-   - Executar testes com mutmut:
-     ```bash
-     mutmut run --paths-to-mutate=../cal_python/cal.py
-     ```
-   - Visualizar resultados do mutmut:
-     ```bash
-     mutmut results
-     mutmut show [id]
-     mutmut html
-     ```
-
 ## Execução da Atividade
 
 1. **Termo de Busca:**
