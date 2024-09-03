@@ -1,5 +1,14 @@
 [
     {
+        "label": "copy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "copy",
+        "description": "copy",
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
         "label": "pytest",
         "kind": 6,
         "isExtraImport": true,
@@ -17,11 +26,19 @@
         "documentation": {}
     },
     {
+        "label": "KNIGHTS",
+        "importPath": "app.main",
+        "description": "app.main",
+        "isExtraImport": true,
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
         "label": "battle",
         "kind": 2,
         "importPath": "py-knights-fighting.app.main",
         "description": "py-knights-fighting.app.main",
-        "peekOfCode": "def battle(knightsConfig):\n    # BATTLE PREPARATIONS:\n    # lancelot\n    lancelot = knightsConfig[\"lancelot\"]\n    # apply armour\n    lancelot[\"protection\"] = 0\n    for a in lancelot[\"armour\"]:\n        lancelot[\"protection\"] += a[\"protection\"]\n    # apply weapon\n    lancelot[\"power\"] += lancelot[\"weapon\"][\"power\"]",
+        "peekOfCode": "def battle(knightsConfig):\n    knightsConfig = copy.deepcopy(knightsConfig)\n    # BATTLE PREPARATIONS:\n    lancelot = knightsConfig[\"lancelot\"]\n    # apply armour\n    lancelot[\"protection\"] = 0\n    for a in lancelot[\"armour\"]:\n        lancelot[\"protection\"] += a[\"protection\"]\n    # apply weapon\n    lancelot[\"power\"] += lancelot[\"weapon\"][\"power\"]",
         "detail": "py-knights-fighting.app.main",
         "documentation": {}
     },
@@ -39,7 +56,7 @@
         "kind": 2,
         "importPath": "py-knights-fighting.tests.test_main",
         "description": "py-knights-fighting.tests.test_main",
-        "peekOfCode": "def base_knights_config():\n    return {\n        \"lancelot\": {\n            \"name\": \"Lancelot\",\n            \"power\": 35,\n            \"hp\": 100,\n            \"armour\": [],\n            \"weapon\": {\n                \"name\": \"Metal Sword\",\n                \"power\": 50,",
+        "peekOfCode": "def base_knights_config():\n    return copy.deepcopy(KNIGHTS)\ndef test_base_knights(base_knights_config):\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 0,\n        \"Arthur\": 30,\n        \"Mordred\": 35,\n        \"Red Knight\": 5,\n    }\ndef test_empty():",
         "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     },
@@ -48,7 +65,16 @@
         "kind": 2,
         "importPath": "py-knights-fighting.tests.test_main",
         "description": "py-knights-fighting.tests.test_main",
-        "peekOfCode": "def test_base_knights(base_knights_config):\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 0,\n        \"Arthur\": 30,\n        \"Mordred\": 35,\n        \"Red Knight\": 5,\n    }\ndef test_lancelot_overpowered(base_knights_config):\n    base_knights_config[\"lancelot\"][\"hp\"] += 50\n    base_knights_config[\"lancelot\"][\"power\"] += 50",
+        "peekOfCode": "def test_base_knights(base_knights_config):\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 0,\n        \"Arthur\": 30,\n        \"Mordred\": 35,\n        \"Red Knight\": 5,\n    }\ndef test_empty():\n    assert battle(None) == None\ndef test_lancelot_overpowered(base_knights_config):",
+        "detail": "py-knights-fighting.tests.test_main",
+        "documentation": {}
+    },
+    {
+        "label": "test_empty",
+        "kind": 2,
+        "importPath": "py-knights-fighting.tests.test_main",
+        "description": "py-knights-fighting.tests.test_main",
+        "peekOfCode": "def test_empty():\n    assert battle(None) == None\ndef test_lancelot_overpowered(base_knights_config):\n    base_knights_config[\"lancelot\"][\"hp\"] += 50\n    base_knights_config[\"lancelot\"][\"power\"] += 50\n    assert battle(base_knights_config) == {\n        \"Lancelot\": 45,\n        \"Arthur\": 30,\n        \"Mordred\": 0,\n        \"Red Knight\": 5,",
         "detail": "py-knights-fighting.tests.test_main",
         "documentation": {}
     },

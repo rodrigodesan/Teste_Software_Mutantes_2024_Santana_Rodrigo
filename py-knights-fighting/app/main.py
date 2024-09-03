@@ -1,3 +1,5 @@
+import copy
+
 KNIGHTS = {
     "lancelot": {
         "name": "Lancelot",
@@ -86,10 +88,12 @@ KNIGHTS = {
 }
 
 
+
 def battle(knightsConfig):
+    knightsConfig = copy.deepcopy(knightsConfig)
     # BATTLE PREPARATIONS:
 
-    # lancelot
+
     lancelot = knightsConfig["lancelot"]
 
     # apply armour
